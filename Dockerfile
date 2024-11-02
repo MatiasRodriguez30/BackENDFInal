@@ -1,11 +1,10 @@
+FROM ubuntu:lastest AS build
+RUN apt-get update
+RUN apt-get install openjdk-17-jdk -y
+COPY . .
+RUN ./gradlew bootJar --no-daemon
 # Usa la imagen de OpenJDK como base
 FROM openjdk:17-jdk-slim
-
-# Establece el directorio de trabajo
-WORKDIR /app
-
-# Copia el archivo JAR al contenedor
-COPY build/libs/appMutante-0.0.1-SNAPSHOT.jar app.jar
-
-# Comando para ejecutar la aplicación
+EXPOSE 8080
+COPY --from=build /build/libs/appMutante-1.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
