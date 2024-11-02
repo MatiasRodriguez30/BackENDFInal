@@ -1,8 +1,5 @@
-# Usa la imagen de Ubuntu como base
-FROM ubuntu:latest AS build
-
-# Actualiza e instala Java
-RUN apt-get update && apt-get install openjdk-17-jdk -y
+# Instala Java
+RUN apt-get install openjdk-17-jdk -y
 
 # Copia el proyecto al contenedor
 COPY . .
@@ -17,8 +14,8 @@ RUN ./gradlew bootJar --no-daemon
 FROM openjdk:17-jdk-slim
 
 # Copia el archivo JAR generado al contenedor y lo renombra
-COPY --from=build build/libs/appMutante-1-SNAPSHOT.jar app.jar
+COPY --from=build build/libs/appMutante-1.jar app.jar
+
 
 # Comando para ejecutar la aplicación
 ENTRYPOINT ["java", "-jar", "/app.jar"]
-
