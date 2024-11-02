@@ -29,6 +29,10 @@ El proyecto está estructurado en capas: controladores, servicios, repositorios 
 - Usar la aplicacion de Postman
 - Crear una nueva coleccion con los metodos POST Y GET
 - Para el endpoint POST usamos el link: http://localhost:8080/mutant/
+  En la parte de raw colocar la siguiente estructura
+  {
+  "dna":["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
+  }
 - Para el endpoint GET usamos el link:http://localhost:8080/stats
 - Solo va a funcionar cuando este localmente activo
 - Para ver la base de datos ingresamos al link: http://localhost:8080/h2-console
