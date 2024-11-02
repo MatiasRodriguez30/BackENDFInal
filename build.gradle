@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.example'
-version = '0.0.1-SNAPSHOT'
+version = '1'
 
 java {
 	toolchain {
@@ -32,7 +32,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
-	testImplementation 'org.mockito:mockito-junit-jupiter:4.0.0' // Asegúrate de usar la versión compatible// Usa mockito-junit-jupiter para integrar con JUnit 5
+	testImplementation 'org.mockito:mockito-junit-jupiter:4.0.0' //de usar la versión compatible// Usa mockito-junit-jupiter para integrar con JUnit 5
 }
 
 tasks.named('test') {
