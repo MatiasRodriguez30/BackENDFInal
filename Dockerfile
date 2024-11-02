@@ -17,7 +17,7 @@ RUN ./gradlew bootJar --no-daemon
 FROM openjdk:17-jdk-slim
 
 # Copia el archivo JAR generado al contenedor y lo renombra
-COPY --from=build build/libs/appMutante-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build build/libs/appMutante-1-SNAPSHOT.jar app.jar
 
 # Comando para ejecutar la aplicación
 ENTRYPOINT ["java", "-jar", "/app.jar"]
