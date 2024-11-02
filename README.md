@@ -32,6 +32,7 @@ El proyecto está estructurado en capas: controladores, servicios, repositorios 
 - Para el endpoint GET usamos el link:http://localhost:8080/stats
 - Solo va a funcionar cuando este localmente activo
 - Para ver la base de datos ingresamos al link: http://localhost:8080/h2-console
+  
 6.**Para probar la app desde render**
 - Usar la aplicacion de Postman
 - Crear una nueva coleccion con los metodos POST Y GET
