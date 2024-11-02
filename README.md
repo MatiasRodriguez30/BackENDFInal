@@ -35,7 +35,7 @@ El proyecto está estructurado en capas: controladores, servicios, repositorios 
 6.**Para probar la app desde render**
 - Usar la aplicacion de Postman
 - Crear una nueva coleccion con los metodos POST Y GET
-- Para el endpoint POST usamos el link: https://backendfinal-4pg1.onrender.com/mutant/
+- Para el endpoint POST usamos el link: https://backendfinal-4pg1.onrender.com/mutant
 - Para el endpoint GET usamos el link: https://backendfinal-4pg1.onrender.com/stats
 
 
