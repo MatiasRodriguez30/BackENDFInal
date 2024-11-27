@@ -42,6 +42,7 @@ El proyecto está estructurado en capas: controladores, servicios, repositorios 
 - Crear una nueva coleccion con los metodos POST Y GET
 - Para el endpoint POST usamos el link: https://backendfinal-4pg1.onrender.com/mutant
 - Para el endpoint GET usamos el link: https://backendfinal-4pg1.onrender.com/stats
-
+# Diagrama de secuencia de la app
+https://drive.google.com/file/d/1S9hvMqxLZaSGhVddDkPcuJ95oJCHeEbr/view?usp=drive_link
 
   
